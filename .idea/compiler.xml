@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="helloword" target="1.5" />
-      <module name="IoC" target="1.7" />
+      <module name="IoC" target="1.8" />
       <module name="quickstart" target="1.8" />
     </bytecodeTargetLevel>
   </component>
