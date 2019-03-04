@@ -1,4 +1,4 @@
-package com.spring.annotation;
+package com.soft1721.spring.spring.annotation;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
