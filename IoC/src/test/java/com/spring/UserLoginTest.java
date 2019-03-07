@@ -10,6 +10,7 @@ import javax.swing.*;
 
 import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
+/*@ContextConfiguration(locations = {"/spring.xml"})*/
 @ContextConfiguration(locations = {"/spring.xml"})
 
 public class UserLoginTest {

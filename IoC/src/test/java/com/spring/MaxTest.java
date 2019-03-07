@@ -8,6 +8,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.logging.Logger;
+
 import static org.junit.Assert.*;
 /*指定单元测试环境*/
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -15,15 +17,12 @@ import static org.junit.Assert.*;
 @ContextConfiguration(locations = {"/bean.xml"})
 
 public class MaxTest {
-/*自动注入max*/
-    @Autowired
-    private Max max;
 
+@Autowired
+private Max max;
     @Test
-    public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("/bean.xml");
-        Max max = (Max) context.getBean(Max.class);
-        System.out.println(max.getMax());
+    public void getMax() {
+       assertEquals(20,max.getMax());
     }
 
 }

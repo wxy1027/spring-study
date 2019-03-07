@@ -2,19 +2,23 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="AOP" />
         <module name="helloword" />
         <module name="IoC" />
         <module name="quickstart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AOP" target="1.8" />
       <module name="helloword" target="1.5" />
       <module name="IoC" target="1.8" />
       <module name="quickstart" target="1.8" />
+      <module name="wxy" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
