@@ -21,8 +21,13 @@
             <aop:before method="connectDB" pointcut-ref="myPointcut1"/>
         </aop:aspect>
     </aop:config>
-
-
-
+<!--启动AspectJ支持-->
+  <!--  <aop:aspectj-autoproxy/>
+    &lt;!&ndash;定义bean&ndash;&gt;
+    <bean id="fighter " class="com.spring.Fighter"/>
+    <bean id="tiger" class="com.spring.Tiger"/>-->
+    <aop:aspectj-autoproxy/>
+    <bean id="imageCopy" class="image.ImageCopy"/>
+    <bean id="imageHandler" class="image.ImageHandler"/>
 
 </beans>
